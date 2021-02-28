@@ -1,0 +1,175 @@
+{% load static  %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'signup/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'signup/responsive.css' %}">
+
+
+</head>
+
+<body>
+    <section id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 text-center">
+                    <div id="logo">
+                        <img src="images/top-logo.png" alt="logo" class="img-responsive">
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 col-sm-12 col-12">
+                    <div id="signup-form">
+                        <div id="heading" class="text-center">
+
+                            <h2>Enter User's Details</h2>
+
+                        </div>
+
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="firstname" id="firstname">Firstname</label>
+                                        <input type="text" class="form-control" id="firstname"
+                                            placeholder="Enter  first name">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="Lastname" id="lastname">Lastname</label>
+                                        <input type="text" class="form-control" id="Lastname"
+                                            placeholder="Enter  last name">
+
+
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label for="age" id="age">Age</label>
+                                            <input type="text" class="form-control" id="age" placeholder="Enter  age">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-12">
+                                        <div class="form-group" id="gender" name="gender">
+                                            <label>Gender</label>
+                                            <div>
+
+                                                <div class="custom-control custom-radio top-0 d-inline-block">
+                                                    <input type="radio" id="Male" name="genderSelect"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label font-weight-300 m-t-5"
+                                                        for="Male">Male</label>
+                                                </div>
+
+                                                <div class="custom-control custom-radio top-0 d-inline-block ml-2">
+                                                    <input type="radio" id="Female" name="genderSelect"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label font-weight-300 m-t-5"
+                                                        for="Female">Female</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="address" id="address">Address</label>
+                                                <Textarea class="form-control" id="address"
+                                                    placeholder="Enter  address"></Textarea>
+
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="state" id="state">State</label>
+                                                <input type="text" class="form-control" id="state"
+                                                    placeholder="Enter  state">
+
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="city" id="city">City</label>
+                                                <input type="text" class="form-control" id="city"
+                                                    placeholder="Enter  city">
+
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pincode" id="pincode">Pincode</label>
+                                                <input type="text" class="form-control" id="pincode"
+                                                    placeholder="Enter  pincode">
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="phoneno" id="phoneno">Phoneno</label>
+                                                <input type="text" class="form-control" id="phoneno"
+                                                    placeholder="Enter  phoneno">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" id="email">Email</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter  email address">
+
+
+                                        </div>
+                                    </div>
+                                        <div class="col-xl-2 col-lg-3 col-sm-3 colmspadding">
+                                            <div class="form-group">
+                                                <label>Bloodgroup</label>
+                                                <select class="selectpicker form-control" data-size="5"
+                                                    data-style="lineheight16 bg-transfer" data-live-search="true"
+                                                    id="bloodgroup" name="bloodgroup">
+                                                    <option value="0" selected="selected">Select</option>
+                                                    <option value="A+">A+</option>
+                                                    <option value="A-">A-</option>
+                                                    <option value="B+">B+</option>
+                                                    <option value="B-">B-</option>
+                                                    <option value="AB+">AB+</option>
+                                                    <option value="AB-">AB-</option>
+                                                    <option value="O+">O+</option>
+                                                    <option value="O-">O-</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <button type="submit" class="btn  btn-block btn-general">Submit</button>
+                                        </div>
+
+                                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
